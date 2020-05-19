@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <center>
+
+          <h1>  {{ onebook.book_name }}</h1>
+          <br>
+          <img src="{{ onebook.Book_cover.url }}" width=500 height=500>
+          <br>
+          <h2>{{ onebook.author }}</h2>
+          <br>
+          <h3>Rating = {{ onebook.rating }}</h3>
+          <h3>Pages  = {{ onebook.pages }}</h3>
+          <h3>Published on = {{ onebook.date }}</h3>
+          <h2><b>SUMMARY:</b></h2>
+          <h5>{{ onebook.summary }}</h5>
+
+          <br>
+
+    </center>
+  </body>
+</html>

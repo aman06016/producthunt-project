@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      {% for genre in genres %}
+      <center><h1>{{ genre.title }}</h1></center>
+      <center><img src="{{ genre.covers.url }}" width="300" height="200"></center>
+      <center><a href="{% url 'selfhelp' genre.id %}">Get  your BOOKS </a></center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      {% endfor %}
+
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+      {% for book in books %}
+      <center>
+
+
+              <img src="{{ book.Book_cover.url }}" width="300" height="300"><br>
+              <a href="{% url 'bookdetail' book.id %}">GO to detail </a>
+              <h1>{{ book.book_name }}</h1><br>
+              <br><br><br><br><br><br><br><br><br>
+
+
+      </center>
+      {% endfor %}
+  </body>
+</html>
